@@ -1,0 +1,59 @@
+.mobile-nav {
+  position: fixed;
+  right: 0;
+  transform: translateX(315px);
+  will-change: transform;
+  height: 100vh;
+  overflow-y: auto;
+  background: white;
+  z-index: 100001;
+  width: 315px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+
+  &__close-icon {
+    margin-right: 20px !important;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .top-nav__container__search {
+    display: flex;
+    width: 260px;
+  }
+
+  .top-nav__container__actions {
+    display: flex;
+    margin-top: 15px;
+    max-width: 270px;
+  }
+
+  .side-nav {
+    display: flex;
+    width: 100%;
+    position: static;
+    overflow-y: visible;
+  }
+
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.mobile-nav-shadow {
+  height: 100vh;
+  width: 100vw;
+  background: rgba($color: black, $alpha: 0.5);
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+}
